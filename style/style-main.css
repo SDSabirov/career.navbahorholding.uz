@@ -107,10 +107,8 @@ img, video {
     object-fit: cover;
 }
 .header__content-box {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 30px;
 }
@@ -121,7 +119,6 @@ img, video {
     line-height: 1.1;
 }
 .header__content-text {
-    width: 725px;
     line-height: 1.2;
     font-size: 56px;
     font-family: 'MM';
@@ -177,7 +174,7 @@ img, video {
     font-size: 25px;
 }
 .welcome__box-img:first-child {
-    height: 200px;
+    height: 150px;
 }
 .welcome__box-img:last-child {
     height: 150px;
@@ -248,15 +245,14 @@ img, video {
     border-radius: 10px;
     padding: 10px 20px;
     min-height: 140px;
-    flex: 110;
     align-items: center;
     justify-content: center;
 }
 .direction__box-item img {
     border: 2px black solid;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     padding: 5px;
 }
 .direction__box-item-text {
@@ -275,6 +271,9 @@ img, video {
 
 /* career */
 
+.career {
+    margin-top: 60px;
+}
 .career__title {
     font-family: 'MB';
     text-align: center;
@@ -386,24 +385,25 @@ img, video {
     box-shadow: 0px -2px 20px 2px rgba(34, 80, 57, 0.2);
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 100%;
     width: 100%;
     border-radius: 30px;
     margin-top: 30px;
-    padding: 30px;
+    padding: 60px;
 }
 .training__box-title {
     margin-top: 30px;
-    font-size: 35px;
+    font-size: 40px;
     color: white;
     font-family: 'MM';
     text-align: center;
 }
 .training__box-text {
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     font-family: 'MM';
+    margin-bottom: 30px;
 }
 .training__box-list {
     margin-top: 10px;
@@ -441,6 +441,7 @@ img, video {
     font-size: 40px;
 }
 .corporate__text {
+    max-width: 1250px;
     width: 100%;
     margin-top: 20px;
     font-size: 25px;
@@ -588,8 +589,11 @@ img, video {
     width: 100%;
     cursor: pointer;
     position: relative;
+    margin-bottom: 10px;
+    font-family: 'MB';
 }
 .faq__question::after {
+    font-family: 'ML';
     content: '+';
     position: absolute;
     right: 0;
@@ -630,7 +634,13 @@ img, video {
     background: hsl(152, 46%, 86%);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.05);
     border-radius: 50px 50px 0 0 ;
-    padding: 20px;
+    padding: 20px 0;
+}
+.contact__top {
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .contact__title {
     color: black;
@@ -661,7 +671,6 @@ img, video {
     text-decoration: underline;
 }
 .contact__box {
-    width: 1200px;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -698,29 +707,33 @@ img, video {
 }
 .contact__box-tell-block {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 .contact__box-tell-block ul {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 600px;
 }
 .contact__box-tell-block ul li {
     background: hsl(150, 46%, 89%);
     border-radius: 10px;
     padding: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
 }
 .contact__box-tell p {
     font-family: 'MM';
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 .contact__box-tell a {
-    font-size: 18px;
+    font-size: 20px;
     color: black;
     font-family: 'MM';
     transition: all 300ms;
@@ -764,10 +777,11 @@ img, video {
 }
 .contact__box-email-flex h2 {
     font-family: 'MM';
-    font-size: 17px;
+    font-size: 20px;
 }
 .contact__box-email a {
     margin-top: 10px;
+    font-size: 20px;
     color: black;
     font-family: 'MM';
 }
@@ -793,7 +807,7 @@ img, video {
 }
 .contact__box-social h2 {
     font-family: 'MM';
-    font-size: 17px;
+    font-size: 20px;
 }
 .contact__box-social-flex {
     display: flex;
@@ -839,7 +853,7 @@ img, video {
 }
 .contact__location-title {
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
     font-family: 'MM';
 }
@@ -936,7 +950,7 @@ img, video {
         font-size: 30px;
     }
     .direction__title {
-        font-size: 30px;
+        font-size: 35px;
     }
     .track__item img {
         width: 250px;
@@ -958,16 +972,7 @@ img, video {
         width: 220px;
     }
     .career__title {
-        font-size: 30px;
-    }
-    .career__box {
-        height: 350px;
-    }
-    .career__box-text:first-child {
-        font-size: 20px;
-    }
-    .career__box-text {
-        font-size: 20px;
+        font-size: 35px;
     }
     .career__why-title {
         font-size: 30px;
@@ -988,7 +993,7 @@ img, video {
         font-size: 30px;
     }
     .training__box-title {
-        font-size: 25px;
+        font-size: 35px;
     }
     .training__box-text {
         font-size: 20px;
@@ -1057,12 +1062,9 @@ img, video {
 
 @media (max-width: 1050px) {
     .contact__box-tell-block ul {
-        justify-content: space-between;
+        width: 300px;
     }
     .contact__box-tell-block li p {
-        font-size: 14px;
-    }
-    .contact__box-tell-block li a {
         font-size: 14px;
     }
     .contact__location-map iframe {
@@ -1085,9 +1087,6 @@ img, video {
     .nav__list-link {
         font-size: 14px;
     }
-    .welcome__title {
-        font-size: 25px;
-    }
     .welcome__box {
         padding: 0 20px;
     }
@@ -1100,21 +1099,7 @@ img, video {
     .direction__text {
         font-size: 25px;
     }
-    .footer__logo img {
-        width: 150px;
-    }
-    .footer__box-title {
-        font-size: 18px;
-    }
-    .footer__box-ul a {
-        font-size: 12px;
-    }
-    .footer__tell p {
-        font-size: 12px;
-    }
-    .footer__tell-link img {
-        width: 30px;
-    }
+
 }
 
 @media (max-width: 860px) {
@@ -1126,7 +1111,7 @@ img, video {
         width: 541px;
     }
     .welcome__title {
-        font-size: 20px;
+        font-size: 25px;
     }
     .contact__location-map iframe {
         width: 500px;
@@ -1142,18 +1127,17 @@ img, video {
     }
     .direction__box-item {
         width: 100%;
-        flex-direction: column;
         padding: 20px;
     }
     .direction__box-item-text {
         width: 100%;
     }
     .direction__box-item img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     .career__why-title {
-        font-size: 25px;
+        font-size: 35px;
     }
     .career__why-box {
         gap: 20px;
@@ -1186,7 +1170,7 @@ img, video {
         height: 30px;
     }
     .training__title {
-        font-size: 25px;
+        font-size: 35px;
     }
     .training__box-title {
         margin-top: 10px;
@@ -1211,17 +1195,17 @@ img, video {
         font-size: 18px;
     }
     .corporate__title {
-        font-size: 25px;
+        font-size: 35px;
     }
     .corporate__text {
         font-size: 18px;
     }
     .vacancy {
-        padding: 20px 40px;
+        padding: 40px;
         border-radius: 80px;
     }
     .vacancy__title {
-        font-size: 25px;
+        font-size: 35px;
     }
     .vacancy__text {
         font-size: 20px;
@@ -1232,16 +1216,10 @@ img, video {
         font-size: 16px;
     }
     .faq__title {
-        font-size: 25px;
+        font-size: 35px;
     }
     .faq__intro {
         font-size: 16px;
-    }
-    .faq__question {
-        font-size: 16px;
-    }
-    .faq__question::after {
-        font-size: 25px;
     }
     .faq__answer p, .faq__answer ul {
         font-size: 14px;
@@ -1250,7 +1228,7 @@ img, video {
         border-radius: 70px 70px 0 0;
     }
     .contact__title {
-        font-size: 25px;
+        font-size: 35px;
     }
     .contact__text-item:first-child {
         font-size: 20px;
@@ -1262,18 +1240,18 @@ img, video {
         flex-direction: column;
     }
     .contact__box-tell-block ul {
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
     }
     .contact__box-tell-img img,
     .contact__box-email-flex img,
     .contact__box-social-flex img {
         width: 35px;
     }
-    .contact__box-tell-img h2,
-    .contact__box-email-flex h2,
-    .contact__box-social h2 {
-        font-size: 16px;
+    .contact__box-tell p {
+        font-size: 25px;
     }
 }
 
@@ -1291,6 +1269,9 @@ img, video {
     .vacancy__link p {
         font-size: 12px;
     }
+    .contact__box-tell-block {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1305,6 +1286,9 @@ img, video {
         height: 100%;
         padding: 50px 25px 25px 25px;
     }
+    .training__box {
+        padding: 30px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -1318,6 +1302,18 @@ img, video {
         width: 100% !important;
         height: 300px;
     }
+    .faq__question {
+        font-size: 16px;
+    }
+    .footer__box-ul a {
+        font-size: 10px;
+    }
+    .footer__tell p {
+        font-size: 10px;
+    }
+    .footer__logo img {
+        width: 150px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1325,7 +1321,7 @@ img, video {
         gap: 10px;
     }
     .header__content-title {
-        font-size: 30px;
+        font-size: 29px;
     }
     .header__content-text {
         font-size: 20px;
@@ -1350,7 +1346,7 @@ img, video {
         margin-top: 20px;
     }
     .direction__title {
-        font-size: 20px;
+        font-size: 23px;
         padding: 10px 0;
     }
     .track__item img {
@@ -1369,7 +1365,7 @@ img, video {
         font-size: 16px;
     }
     .career__title {
-        font-size: 25px;
+        font-size: 23px;
     }
     .career__why-title {
         font-size: 20px;
@@ -1384,23 +1380,14 @@ img, video {
         left: 98.5px;
     }
     .training__title {
-        font-size: 20px;
-    }
-    .training__box-title {
-        font-size: 18px;
-    }
-    .training__box-text {
-        font-size: 15px;
-    }
-    .training__box-list-text {
-        font-size: 12px;
+        font-size: 23px;
     }
     .training__text {
         font-size: 16px;
     }
     .corporate__title {
         margin-top: 20px;
-        font-size: 20px;
+        font-size: 23px;
     }
     .corporate__text {
         font-size: 16px;
@@ -1410,31 +1397,25 @@ img, video {
         padding: 20px 10px;
     }
     .vacancy__title {
-        font-size: 20px;
+        font-size: 23px;
     }
     .vacancy__text {
-        font-size: 15px;
+        font-size: 18px;
     }
     .vacancy__ul-li {
-        font-size: 12px;
+        font-size: 15px;
     }
     .faq__title {
-        font-size: 20px;
+        font-size: 23px;
     }
     .faq__intro {
-        font-size: 14px;
-    }
-    .faq__question {
-        font-size: 12px;
-    }
-    .faq__answer p, .faq__answer ul {
-        font-size: 10px;
+        font-size: 16px;
     }
     .contact {
         border-radius: 20px;
     }
     .contact__title {
-        font-size: 24px;
+        font-size: 23px;
     }
     .contact__text-item:first-child {
         font-size: 16px;
@@ -1444,7 +1425,19 @@ img, video {
     }
     .contact__box-email-flex h2,
     .contact__box-social h2 {
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .contact__box-tell p {
+        font-size: 20px;
+    }
+    .contact__box-tell a {
+        font-size: 14px;
+    }
+    .contact__box-email a {
+        font-size: 13px;
+    }
+    .contact__box-tell-block ul li {
+        width: 160px;
     }
     .contact__location-title {
         font-size: 20px;
@@ -1463,10 +1456,11 @@ img, video {
     .footer__box-title {
         font-size: 14px;
     }
-    .footer__box-ul a {
-        font-size: 10px;
-    }
-    .footer__tell p {
+
+}
+@media (max-width: 375px) {
+    .contact__box-email-flex h2,
+    .contact__box-social h2 {
         font-size: 10px;
     }
 }
