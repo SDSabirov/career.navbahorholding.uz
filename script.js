@@ -5,7 +5,7 @@ async function fetchVacancies() {
         const vacanciesContainer = document.getElementById('vacancies');
         vacanciesContainer.innerHTML = '';
 
-        if (data.items.length === 0) {
+        if (!data.items || data.items.length === 0) {
             // если вакансий нет
             const noVacancies = document.createElement('p');
             noVacancies.textContent = 'На данный момент нет открытых вакансий. Попробуйте позже!';
